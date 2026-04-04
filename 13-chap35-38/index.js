@@ -121,15 +121,11 @@
 // let result = calculateHypotenuse();
 // document.writeln(result);
 
-
-
-
 // Q9. Write a function that calculates the area of a rectangle.
 //      A = width * height
 //     Pass width and height in following manner:
 // i. Arguments as value
 // ii. Arguments as variables
-
 
 // function areaOfRectangle(width, height){
 //        let A =width * height;
@@ -140,9 +136,6 @@
 // console.log(areaOfRectangle(3, 6));
 // console.log(areaOfRectangle(w, h));
 
-
-
-
 // Q10. Write a JavaScript function that checks whether a passed
 // string is palindrome or not?
 // A palindrome is word, phrase, or sequence that reads the same backward as
@@ -150,7 +143,7 @@
 
 // function palindrome(str){
 //     let reversed = str.split("").reverse().join("");
-    
+
 //     if(str === reversed){
 //         return true;  // palindrome hai
 //     } else {
@@ -160,24 +153,60 @@
 // console.log(palindrome("madam")); // true
 // console.log(palindrome("hello")); // false
 
-
-
-
 // Q11. Write a JavaScript function that accepts a string as a
 // parameter and converts the first letter of each word of the
 // string in upper case.
 // EXAMPLE STRING : 'the quick brown fox'
 // EXPECTED OUTPUT : 'The Quick Brown Fox'
 
+// function upperCase(str){
+//     let words = str.split(" ");
+// for(let i = 0; i < words.length; i++){
+//     words[i] = words[i].charAt(0).toUpperCase() + words[i].slice(1);
+// }
+// return words.join(" ");
+// }
+
+// console.log(upperCase("the quick brown fox"));
+
 // Q12. Write a JavaScript function that accepts a string as a
 // parameter and find the longest word within the string.
 // EXAMPLE STRING : 'Web Development Tutorial'
 // EXPECTED OUTPUT : 'Development'
 
+// function longestStr(str) {
+//   let words = str.split(" ");
+//   let longest = words[0];
+
+//   for (var i = 1; i < words.length; i++) {
+//     if (words[i].length > longest.length) {
+//       longest = words[i];
+//     }
+//     return longest;
+//   }
+// }
+
+// console.log(longestStr("Web Development Tutorial"));
+// console.log(longestStr("Karachi university"));
+
 // Q13. Write a JavaScript function that accepts two arguments, a
 // string and a letter and the function will count the number of
 // occurrences of the specified letter within the string.
 // Sample arguments : 'JSResourceS.com', 'o'
+
+// function countLetter(str, letter) {
+//   let count = 0;
+
+//   for (let i = 0; i < str.length; i++) {
+//     if (str[i] === letter) {
+//       count = count + 1;
+//     }
+//   }
+
+//   return count;
+// }
+
+// console.log(countLetter("university of karachi", "i"));
 
 // Q14. The Geometrizer
 // Create 2 functions that calculate properties of a circle, using
@@ -193,3 +222,15 @@
 
 // Circumference of circle    =     2πr
 // Area of circle       =     πr2
+
+// function calcCircumference(radius) {
+//     let circumference = 2 * 3.1416 * radius;
+//     console.log("The circumference is " + circumference);
+// }
+// calcCircumference(5);
+
+// function calcArea(radius) {
+//     let area = 3.1416 * radius * radius;
+//     console.log("The area is " + area);
+// }
+// calcArea(5);
