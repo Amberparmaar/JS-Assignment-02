@@ -45,38 +45,38 @@
 // appear with the values of that row.
 
 
-let row; 
-function add(){
- let table = document.getElementById('table');
+// let row; 
+// function add(){
+//  let table = document.getElementById('table');
  
- table.innerHTML +=` <tr>
-      <td>${fname.value}</td>
-      <td>${age.value}</td>
-      <td>${stclass.value}</td>
-      <td>
-        <button onclick="edit(this)">Edit</button>
-        <button onclick="del(this)">Delete</button>
-      </td>
-    </tr>`
+//  table.innerHTML +=` <tr>
+//       <td>${fname.value}</td>
+//       <td>${age.value}</td>
+//       <td>${stclass.value}</td>
+//       <td>
+//         <button onclick="edit(this)">Edit</button>
+//         <button onclick="del(this)">Delete</button>
+//       </td>
+//     </tr>`
 
-}
-function del(btn) {
-  btn.parentElement.parentElement.remove();
-}
+// }
+// function del(btn) {
+//   btn.parentElement.parentElement.remove();
+// }
 
-function edit(btn) {
-  row = btn.parentElement.parentElement;
-  let cells = row.getElementsByTagName('td');
-  fname.value = cells[0].innerHTML;
-  age.value = cells[1].innerHTML;
-  stclass.value = cells[2].innerHTML;
-  editBox.style.display = "block";
-}
-function update() {
-  row.cells[0].innerText = eName.value;
-  row.cells[1].innerText = eAge.value;
-  row.cells[2].innerText = eClass.value;
+// function edit(btn) {
+//   row = btn.parentElement.parentElement;
+//   let cells = row.getElementsByTagName('td');
+//   fname.value = cells[0].innerHTML;
+//   age.value = cells[1].innerHTML;
+//   stclass.value = cells[2].innerHTML;
+//   editBox.style.display = "block";
+// }
+// function update() {
+//   row.cells[0].innerText = eName.value;
+//   row.cells[1].innerText = eAge.value;
+//   row.cells[2].innerText = eClass.value;
 
 
-  editBox.style.display = "none";
-}
+//   editBox.style.display = "none";
+// }
